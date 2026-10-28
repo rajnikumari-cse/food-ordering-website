@@ -77,3 +77,8 @@ The JavaScript functionality allows users to:
 ---
 
 ⭐ If you like this project, consider giving the repository a star!
+## 🌐 Live Demo
+
+Check out the live website here:
+
+👉 [Foodie - Food Ordering Website](https://rajnikumari-cse.github.io/food-ordering-website/)
