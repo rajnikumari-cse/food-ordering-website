@@ -1,84 +1,78 @@
 
 # 🍔 Foodie - Food Ordering Website
 
-Foodie is a responsive food ordering website built using HTML, CSS, and JavaScript. It provides a simple and attractive interface where users can explore food items, view prices, and add items to their cart.
+Foodie is a responsive food ordering website built using HTML, CSS, and JavaScript. Users can explore food items, add products to their cart, apply the available offers, and place a demo order through a checkout page.
 
-## 🌟 Features
+## 🌐 Live Demo
 
-- 🏠 Home section with an attractive hero area
-- 🍕 Food categories and menu cards
-- 💰 Food prices displayed clearly
-- 🛒 Add to Cart functionality
-- 🔢 Dynamic cart item count
-- 🧾 Automatic total price calculation
-- 🗑️ Clear Cart functionality
-- 🎁 Special offers section
-- 📞 Contact information section
-- 📱 Responsive design for desktop, tablet, and mobile screens
+[Visit Foodie Website](https://rajnikumari-cse.github.io/food-ordering-website/)
+
+## ✨ Features
+
+- **Responsive Design:** Works on desktop, tablet, and mobile screens.
+- **Food Menu:** Browse food items with their names and prices.
+- **Shopping Cart:** Add items, increase or decrease quantity, and remove items.
+- **Persistent Cart:** Cart items remain saved after refreshing the page using Local Storage.
+- **Offers Section:** Displays available food offers.
+- **Checkout Form:** Enter customer name, mobile number, and delivery address.
+- **Multiple Demo Payment Options:**
+  - Cash on Delivery (COD)
+  - UPI — Google Pay, PhonePe, Paytm, and BHIM UPI
+  - Net Banking
+  - Debit/Credit Card demo form
+- **Order Confirmation:** Displays order confirmation after a successful demo checkout.
+- **Order History:** Stores and displays previous demo orders.
+- **Clear Cart and Order History:** Manage cart items and saved order records.
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+- Browser Local Storage
 
-## 🍽️ Menu
+## 🍕 Food Items
 
-| Food Item | Price |
-|---|---:|
-| Burger | ₹149 |
-| Pizza | ₹199 |
-| Pasta | ₹179 |
-| French Fries | ₹99 |
+- Classic Burger — ₹149
+- Cheese Pizza — ₹249
+- White Sauce Pasta — ₹199
+- French Fries — ₹99
 
-## ⚙️ How to Run the Project
+## 💳 Payment Information
 
-1. Download or clone this repository.
-2. Keep all three files in the same folder:
-   - `food-ordering.html`
-   - `food-ordering.css`
-   - `food-ordering.js`
-3. Open `food-ordering.html` in your web browser.
-4. Browse the menu and click **Add to Cart** to test the cart functionality.
+This project uses a **demo payment interface** for learning and portfolio demonstration purposes.
+
+No real payment is processed. Cart items and demo order details are stored in the browser's Local Storage.
 
 ## 📂 Project Structure
 
 ```text
-Foodie/
-├── food-ordering.html
+food-ordering-website/
+│
+├── index.html
 ├── food-ordering.css
 ├── food-ordering.js
 └── README.md
 ```
 
-## 🛒 Cart Functionality
+## 🚀 How to Run Locally
 
-The JavaScript functionality allows users to:
-- Add food items to the cart.
-- View the updated number of items.
-- Calculate the total price automatically.
-- Clear the cart and reset the total.
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Open `index.html` in your browser, or use the VS Code Live Server extension.
+4. Browse the menu, add food items to the cart, and test the checkout flow.
 
-## 📌 Future Improvements
+## 🎯 Project Objective
 
-- User login and registration
-- Food search and filtering
-- Applying discounts and coupons
-- Order placement functionality
-- Backend and database integration
-- Online payment integration
+The objective of this project is to practice frontend web development by building a food ordering interface with interactive cart functionality, form validation, demo payment options, and browser-based data persistence.
 
 ## 👩‍💻 Author
 
 **Rajni Kumari**
 
-- GitHub: [rajnikumari-cse](https://github.com/rajnikumari-cse)
+- [GitHub](https://github.com/rajnikumari-cse)
+- [LinkedIn](https://linkedin.com/in/rajni-kumari-7b0ba6431)
 
 ---
 
-⭐ If you like this project, consider giving the repository a star!
-## 🌐 Live Demo
-
-Check out the live website here:
-
-👉 [Foodie - Food Ordering Website](https://rajnikumari-cse.github.io/food-ordering-website/)
+⭐ If you find this project useful, feel free to explore the repository!
