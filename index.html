@@ -4,221 +4,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie | Delicious Food Delivered Fast</title>
+    <meta name="description" content="Foodie - order your favourite food with a demo checkout experience.">
+    <title>Foodie | Food Ordering Website</title>
     <link rel="stylesheet" href="food-ordering.css">
     <script src="food-ordering.js" defer></script>
 </head>
 <body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="logo" href="#home">🍔 Foodie</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#checkout">Checkout</a>
+        </div>
+        <a class="cart-link" href="#cart">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="logo">Foodie<span>.</span></a>
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">FRESH • TASTY • DELICIOUS</p>
+            <h1>Delicious Food,<br>Delivered Fast!</h1>
+            <p>Your favourite food is just a few clicks away.</p>
+            <a class="primary-btn" href="#menu">Explore Menu</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">🍕</div>
+    </section>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#offers">Offers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <section class="section" id="menu">
+        <div class="section-heading">
+            <p class="eyebrow">OUR MENU</p>
+            <h2>Popular Dishes</h2>
+            <p>Choose your favourites and add them to your cart.</p>
+        </div>
 
-            <a href="#menu" class="cart-button">
-                🛒 Cart <span id="cart-count">0</span>
-            </a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero section" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">FRESH • TASTY • DELICIOUS</p>
-                <h1>Delicious Food <span>Delivered Fast</span></h1>
-                <p class="home-text">
-                    Fresh and tasty food at your doorstep.
-                    Order your favourites and enjoy every bite!
-                </p>
-                <a href="#menu" class="btn">Explore Menu</a>
-            </div>
-
-            <div class="hero-image">
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTReU31V7GpY9KnA4w6DDN506cqY2YS1mw7me4dXQZy_Q&s=10"
-                    alt="Delicious food combo"
-                >
-            </div>
-        </section>
-
-        <section class="section" id="categories">
-            <div class="section-heading">
-                <p class="eyebrow">EXPLORE YOUR FAVOURITES</p>
-                <h2>Food Categories</h2>
-                <p>Something delicious for every craving.</p>
-            </div>
-
-            <div class="category-list">
-                <a href="#burger" class="category-item">🍔 Burgers</a>
-                <a href="#pizza" class="category-item">🍕 Pizza</a>
-                <a href="#pasta" class="category-item">🍝 Pasta</a>
-                <a href="#fries" class="category-item">🍟 French Fries</a>
-            </div>
-        </section>
-
-        <section class="section menu-section" id="menu">
-            <div class="section-heading">
-                <p class="eyebrow">MADE WITH LOVE</p>
-                <h2>Our Popular Menu</h2>
-                <p>Choose your favourite food and add it to your cart.</p>
-            </div>
-
-            <div class="food-grid">
-                <article class="food-card" id="burger">
-                    <img
-                        class="menu-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjXeHw7kflyUhjI7cRG8FlQ1QtWbhZPz-Dwn4inST7cg&s=10"
-                        alt="Burger"
-                        loading="lazy"
-                    >
-                    <div class="food-info">
-                        <h3>Burger</h3>
-                        <p class="food-description">
-                            Juicy and delicious burger made with fresh ingredients.
-                        </p>
-                        <div class="food-bottom">
-                            <p class="food-price">₹149</p>
-                            <button class="btn add-to-cart" data-name="Burger" data-price="149">
-                                Add to Cart
-                            </button>
-                        </div>
+        <div class="food-grid">
+            <article class="food-card">
+                <div class="food-image" aria-hidden="true">🍔</div>
+                <div class="food-info">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy burger with fresh veggies.</p>
+                    <div class="food-bottom">
+                        <strong>₹149</strong>
+                        <button class="add-to-cart" data-name="Classic Burger" data-price="149">Add to Cart</button>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <article class="food-card" id="pizza">
-                    <img
-                        class="menu-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwb4_8xCSzRs-zbCxXAEDUl6i_L-mALvYfF7cAQhFZGw&s=10"
-                        alt="Pizza"
-                        loading="lazy"
-                    >
-                    <div class="food-info">
-                        <h3>Pizza</h3>
-                        <p class="food-description">
-                            Cheesy pizza topped with delicious fresh vegetables.
-                        </p>
-                        <div class="food-bottom">
-                            <p class="food-price">₹199</p>
-                            <button class="btn add-to-cart" data-name="Pizza" data-price="199">
-                                Add to Cart
-                            </button>
-                        </div>
+            <article class="food-card">
+                <div class="food-image" aria-hidden="true">🍕</div>
+                <div class="food-info">
+                    <h3>Cheese Pizza</h3>
+                    <p>Cheesy pizza with delicious toppings.</p>
+                    <div class="food-bottom">
+                        <strong>₹249</strong>
+                        <button class="add-to-cart" data-name="Cheese Pizza" data-price="249">Add to Cart</button>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <article class="food-card" id="pasta">
-                    <img
-                        class="menu-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQ8zK1F1sBfLt4IQUuSxmqEgAT-TZs5sNV-Jb4JBp-Q&s=10"
-                        alt="Pasta"
-                        loading="lazy"
-                    >
-                    <div class="food-info">
-                        <h3>Pasta</h3>
-                        <p class="food-description">
-                            Creamy and delicious pasta made with fresh ingredients.
-                        </p>
-                        <div class="food-bottom">
-                            <p class="food-price">₹179</p>
-                            <button class="btn add-to-cart" data-name="Pasta" data-price="179">
-                                Add to Cart
-                            </button>
-                        </div>
+            <article class="food-card">
+                <div class="food-image" aria-hidden="true">🍝</div>
+                <div class="food-info">
+                    <h3>White Sauce Pasta</h3>
+                    <p>Creamy pasta with Italian flavours.</p>
+                    <div class="food-bottom">
+                        <strong>₹199</strong>
+                        <button class="add-to-cart" data-name="White Sauce Pasta" data-price="199">Add to Cart</button>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <article class="food-card" id="fries">
-                    <img
-                        class="menu-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61ffVJW0NPtBWDRLIkGABXEiCW6nlkc91bRHF8JSyBg&s=10"
-                        alt="French fries"
-                        loading="lazy"
-                    >
-                    <div class="food-info">
-                        <h3>French Fries</h3>
-                        <p class="food-description">
-                            Crispy golden fries served hot and fresh.
-                        </p>
-                        <div class="food-bottom">
-                            <p class="food-price">₹99</p>
-                            <button class="btn add-to-cart" data-name="French Fries" data-price="99">
-                                Add to Cart
-                            </button>
-                        </div>
+            <article class="food-card">
+                <div class="food-image" aria-hidden="true">🍟</div>
+                <div class="food-info">
+                    <h3>French Fries</h3>
+                    <p>Golden, crispy and perfectly salted.</p>
+                    <div class="food-bottom">
+                        <strong>₹99</strong>
+                        <button class="add-to-cart" data-name="French Fries" data-price="99">Add to Cart</button>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
-            <div class="cart-summary" id="cart-summary">
-                <h3>Your Cart</h3>
-                <p>Items added: <strong id="cart-items">0</strong></p>
-                <p>Total Price: <strong id="cart-total">₹0</strong></p>
-                <button class="btn clear-cart" id="clear-cart">Clear Cart</button>
-                <p class="cart-message" id="cart-message" aria-live="polite">
-                    Your cart is empty.
-                </p>
-            </div>
-        </section>
-
-        <section class="section offers-section" id="offers">
-            <div class="section-heading">
+    <section class="offers-section" id="offers">
+        <div class="offer-content">
+            <div>
                 <p class="eyebrow">SPECIAL DEALS</p>
-                <h2>Offers Just for You</h2>
-                <p>Enjoy delicious food at exciting prices.</p>
+                <h2>Good Food, Good Mood! 🎉</h2>
+                <p>Explore our menu and make your next meal special.</p>
+                <a href="#menu" class="primary-btn">Order Now</a>
             </div>
+            <div class="offer-art" aria-hidden="true">🍔 🍕</div>
+        </div>
+    </section>
 
-            <div class="offer-grid">
-                <article class="offer-card">
-                    <span class="offer-discount">20% OFF</span>
-                    <h3>Weekend Special</h3>
-                    <p>Get your favourite food this weekend.</p>
-                    <a href="#menu" class="btn">Order Now</a>
-                </article>
+    <section class="section" id="checkout">
+        <div class="section-heading">
+            <p class="eyebrow">ALMOST THERE</p>
+            <h2>Checkout</h2>
+            <p>Review your cart and place a demo order.</p>
+        </div>
 
-                <article class="offer-card">
-                    <span class="offer-discount">15% OFF</span>
-                    <h3>Pizza Deal</h3>
-                    <p>Enjoy a pizza treat with exciting discounts.</p>
-                    <a href="#pizza" class="btn">Grab Deal</a>
-                </article>
+        <div class="checkout-grid">
+            <section class="panel" id="cart">
+                <h3>Your Cart</h3>
+                <div id="cart-items">
+                    <p class="empty-message">Your cart is empty. Add some delicious food!</p>
+                </div>
+                <div class="cart-total">
+                    <span>Total Amount</span>
+                    <strong id="cart-total">₹0</strong>
+                </div>
+                <button id="clear-cart" class="secondary-btn" type="button">Clear Cart</button>
+            </section>
 
-                <article class="offer-card">
-                    <span class="offer-discount">25% OFF</span>
-                    <h3>First Order</h3>
-                    <p>A special offer for your first order.</p>
-                    <a href="#menu" class="btn">Order Now</a>
-                </article>
-            </div>
-            <p class="offer-note">
-                Note: Offers are for display purposes; discounts are not applied to cart totals.
-            </p>
+            <form class="panel checkout-form" id="checkout-form">
+                <h3>Delivery Details</h3>
+
+                <label for="customer-name">Full Name</label>
+                <input id="customer-name" name="customerName" type="text" autocomplete="name" placeholder="Enter your name" required>
+
+                <label for="customer-phone">Mobile Number</label>
+                <input id="customer-phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" placeholder="10-digit mobile number" required>
+
+                <label for="customer-address">Delivery Address</label>
+                <textarea id="customer-address" name="address" rows="3" autocomplete="street-address" placeholder="House number, street, city and PIN code" required></textarea>
+
+                <h3 class="payment-heading">Choose Payment Method</h3>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="cod" required>
+                    <span>💵 Cash on Delivery</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="upi" required>
+                    <span>📱 UPI Apps</span>
+                </label>
+                <div class="payment-details" id="upi-details" hidden>
+                    <label for="upi-app">Choose UPI App</label>
+                    <select id="upi-app">
+                        <option value="">Select an app</option>
+                        <option>Google Pay</option>
+                        <option>PhonePe</option>
+                        <option>Paytm</option>
+                        <option>BHIM UPI</option>
+                    </select>
+                    <p class="hint">Demo only. No money will be transferred.</p>
+                </div>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="netbanking" required>
+                    <span>🏦 Net Banking</span>
+                </label>
+                <div class="payment-details" id="bank-details" hidden>
+                    <label for="bank-name">Select Bank</label>
+                    <select id="bank-name">
+                        <option value="">Choose your bank</option>
+                        <option>State Bank of India</option>
+                        <option>HDFC Bank</option>
+                        <option>ICICI Bank</option>
+                        <option>Axis Bank</option>
+                        <option>Punjab National Bank</option>
+                        <option>Other Bank</option>
+                    </select>
+                    <p class="hint">Demo only. No bank login is required.</p>
+                </div>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="card" required>
+                    <span>💳 Debit / Credit Card</span>
+                </label>
+                <div class="payment-details" id="card-details" hidden>
+                    <label for="card-name">Name on Card</label>
+                    <input id="card-name" type="text" autocomplete="off" placeholder="Demo cardholder name">
+
+                    <label for="card-number">Demo Card Number</label>
+                    <input id="card-number" type="text" inputmode="numeric" autocomplete="off" maxlength="19" placeholder="1234 5678 9012 3456">
+
+                    <div class="card-row">
+                        <div>
+                            <label for="card-expiry">Expiry (MM/YY)</label>
+                            <input id="card-expiry" type="text" autocomplete="off" maxlength="5" placeholder="MM/YY">
+                        </div>
+                        <div>
+                            <label for="card-cvv">Demo CVV</label>
+                            <input id="card-cvv" type="password" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="123">
+                        </div>
+                    </div>
+                    <p class="hint">Use fictional details only. Never enter real card details.</p>
+                </div>
+
+                <p id="payment-message" class="form-message" role="alert" aria-live="polite"></p>
+                <button class="primary-btn place-order-btn" type="submit">Place Demo Order</button>
+                <p class="demo-note">🔒 Demo checkout only. No real payment is processed.</p>
+            </form>
+        </div>
+
+        <section class="confirmation" id="order-confirmation" hidden aria-live="polite">
+            <div class="success-icon">✓</div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your demo order has been saved in this browser.</p>
+            <p>Order ID: <strong id="order-id"></strong></p>
+            <p id="confirmation-summary"></p>
+            <button id="new-order" class="primary-btn" type="button">Order Again</button>
         </section>
+    </section>
 
-        <section class="section contact-section" id="contact">
-            <div class="section-heading">
-                <p class="eyebrow">WE ARE HERE FOR YOU</p>
-                <h2>Contact Us</h2>
-                <p>Have questions or feedback? We'd love to hear from you.</p>
-            </div>
+    <section class="section order-history-section" id="order-history">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR ACTIVITY</p>
+            <h2>Recent Orders</h2>
+            <p>Demo orders saved in this browser.</p>
+        </div>
+        <div id="order-history-list" class="order-history-list">
+            <p class="empty-message">No orders yet.</p>
+        </div>
+        <button id="clear-history" class="secondary-btn" type="button">Clear Order History</button>
+    </section>
+</main>
 
-            <div class="contact-card">
-                <p>📧 Email: support@foodie.com</p>
-                <p>📞 Phone: +91 98765 43210</p>
-                <p>📍 Address: Hisar, Haryana, India</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>© 2026 Foodie. Made with ❤️ for food lovers.</p>
-    </footer>
-
+<footer>
+    <a class="logo" href="#home">🍔 Foodie</a>
+    <p>Made with ❤️ for food lovers.</p>
+    <p class="footer-note">Student project • Demo checkout • No real payments</p>
+</footer>
 </body>
 </html>
